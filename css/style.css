@@ -1,0 +1,684 @@
+html {
+    scroll-behavior: smooth;
+}
+
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #606060;
+}
+
+i {
+    color: #2fccd0;
+}
+
+.nav_menu {
+    display: none;
+}
+
+#mySidenav {
+    display: none;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,168,225,0.3), rgba(0,168,225,0.3)), url('../img/bg-img.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    clip-path: polygon(100% 0%, 100% 77%, 50% 100%, 0 75%, 0 0);
+}
+
+.header:before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    opacity: 0.3;
+    z-index: -1;
+    background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%);
+}
+
+.navbar:before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    opacity: 0.3;
+    z-index: -1;
+    background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%);
+}
+
+.nav-item a {
+    color: #fff!important;
+    font-weight: 400;
+}
+
+.nav-item a:hover {
+    color: snow;
+}
+
+.header-section {
+    width: 100%;
+    height: inherit;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.center-div {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+.header-buttons a {
+    border: 1px solid #fff;
+    border-radius: 100px;
+    margin: 0 5px;
+    padding: 12px 35px;
+    outline: none;
+    color: #fff;
+    font-size: 1rem;
+    line-height: 1.4;
+    font-weight: 400;
+    text-align: center;
+}
+
+.header-buttons a:hover {
+    color: #50d1c0;
+    background: #fff;
+    text-decoration: none;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+
+.center-div p {
+    font-size: 1.3rem;
+    padding: 10px 0 20px 0;
+    color: #fff;
+}
+/* ============================================
+    Header Section End 
+============================================ */
+
+/* ============================================
+2. Section Two Start 
+============================================ */
+.header-extradiv {
+    width: 100%;
+    height: auto;
+    margin: 100px 0;
+    text-align: center;
+}
+
+.extra_div {
+    background-color: #fff;
+    border: medium none;
+    padding: 50px!important;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+.extra_div h5, .servicediv h2 {
+    font-size: 0.9rem;
+    margin: 20px 0 15px 0;
+    font-weight: bold;
+    line-height: 1.1;
+    word-spacing: 4px;
+}
+
+.extra_div:hover {
+    box-shadow: 0 0 24px 0 rgba(0,0,0,0.3);
+    transform: translateY(-20px);
+}
+/* ============================================
+    Section Two End 
+============================================ */
+
+
+/* ============================================
+3.  Section Three Start 
+============================================ */
+.serviceoffers {
+    background: #f7f7f9;
+    padding: 50px 0;
+    margin-bottom: 50px;
+}
+
+.headings {
+    margin-bottom: 50px;
+}
+
+.headings h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.names h1 {
+    color: #2e2e2e;
+    font-size: 0.9rem;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.service_icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress {
+    height: 0.6rem!important;
+    margin-bottom: 25px!important;
+    background: #606060;
+}
+/* ============================================
+    Section Three End 
+============================================ */
+
+/* ============================================
+4.  Section Four Start 
+============================================ */
+.project-work {
+    margin: 100px 0;
+}
+
+.project-work h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+/* ============================================
+    Section Four End 
+============================================ */
+
+/* ============================================
+5.  Section Five Start(Pricing)
+============================================ */
+.pricing {
+    width: 100%;
+    height: 100vh;
+    padding: 50px;
+    position: relative;
+}
+
+.pricing:before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    z-index: -1;
+    background: linear-gradient(160deg, #16c9f6 55%, #fff 0%);
+}
+
+.money {
+    font-size: 40px;
+    line-height: 1;
+    color: #606060;
+}
+
+.card {
+    transition: 0.4s ease;
+}
+
+.card-header {
+    font-size: 1.6rem;
+    background: #fff!important;
+    padding: 25px 9px!important;
+    font-weight: bold;
+}
+
+.card-body li {
+    margin: 10px 0;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #606060;
+}
+
+.card-footer {
+    background: white!important;
+    padding: 30px 0px!important;
+}
+
+.card-footer a {
+    border: 1px solid #50d1c0;
+    border-radius: 100px;
+    margin: 0 5px;
+    padding: 12px 90px;
+    outline: none;
+    color: #50d1c0;
+    font-size: 1rem;
+    line-height: 1.4;
+    font-weight: 400;
+    text-align: center;
+}
+
+.card:hover .card-footer a {
+    color: #fff;
+    background: #50d1c0;
+    text-decoration: none;
+    transition: 0.4s;
+/*    box-shadow: 0 0 6px 0 rgba(0,0,0,0.3);*/
+}
+
+.card:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 0 26px 0 rgba(0,0,0,0.3);
+}
+
+.card:hover .card-header, .card:hover .money {
+    color: #50d1c0;
+    transition: 0.4s;
+}
+
+.pricing_card_second {
+    transform: translateY(-20px);
+}
+/* ============================================
+    Section Five End(Pricing)
+============================================ */
+
+/* ============================================
+6.  Section Six Start(Customer Feedback Happy clients)
+============================================ */
+.happyclients {
+    width: 100%;
+    height: 100vh;
+    padding: 80px 0;
+}
+
+#happyclientsdivM {
+    display: none;
+}
+
+.box {
+    text-align: center;
+    border: 1px solid rgba(0,0,0,0,2);
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.3);
+    border-radius: 2px;
+    transition: 0.3s ease;
+    padding: 20px;
+}
+
+.box:hover {
+    background-color: #16c9f6;
+}
+
+.box:hover p {
+    color: #fff;
+}
+
+.carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: -60px!important;
+}
+
+.carousel-indicators li {
+    background-color: #16c9f6!important;
+    padding: 2px 22px;
+    border-radius: 30px;
+    margin: 0 6px;
+}
+
+.carousel-indicators .active {
+    background-color: #16c9f6!important;
+    opacity: 0.3;
+}
+
+.box a img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.box a i {
+    content: "\f10d";
+    font-family: FontAwesome;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    position: absolute;
+    top: 24%;
+    left: 56%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%);
+}
+
+.box h1 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.box h3 {
+    font-size: 13px;
+    font-weight: 400;
+    color: #666666;
+    margin-bottom: 20px;
+}
+/* ============================================
+    Section Six End(Customer Feedback)
+============================================ */
+
+/* ============================================
+    Section Seven Start(Contact US)
+============================================ */
+.contact_us {
+    width: 100%;
+    height: auto;
+    padding: 50px;
+    position: relative;
+    padding-top: 100px;
+    margin-top: 60px;
+}
+
+.contact_us:before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    z-index: -1;
+    background: linear-gradient(330deg, #16c9f6 55%, #fff 0%);
+}
+
+.contact_us input {
+    font-size: 13px;
+    border-radius: 0px;
+    border: 1px solid #ddd;
+}
+
+.contact_us input:focus {
+    box-shadow: 0 0 0 0 #fff;
+}
+
+.contact_us textarea {
+    font-size: 13px;
+    border-radius: 0px;
+    border: 1px solid #ddd;
+}
+
+.contact_us textarea:focus {
+    box-shadow: 0 0 0 0 #fff;
+}
+
+.form_btn a {
+    border-radius: 100px;
+    margin: 0 5px;
+    padding: 9px 35px;
+    outline: none;
+    color: transparent;
+    font-size: 1.2rem;
+    line-height: 1.4;
+    font-weight: 400;
+    text-align: center;
+    background-color: transparent;
+}
+
+form:hover .form_btn a {
+    color: #16c9f6;
+    background: #fff;
+    text-decoration: none;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+
+/* ============================================
+    Section Seven End(Contact US)
+============================================ */
+
+
+/* ============================================
+8.  Section Eight Start(Newsletter)
+============================================ */
+.newsletter {
+    width: 100%;
+    height: auto;
+    padding: 50px;
+    position: relative;
+    padding-top: 100px;
+    margin-top: 60px;
+}
+
+#newsletter_id_M {
+    display: none;
+}
+
+.subscribe_form input {
+    border-radius: 100px 0 0 100px;
+    font-size: 14px;
+    padding-left: 25px;
+    min-width: 120px;
+    min-height: 45px;
+}
+
+.subscribe_form input:focus {
+    box-shadow: 0 0 0 0 #fff;
+}
+
+.subscribe_form a {
+    color: #fff;
+    background-color: #16c9f6;
+    border-radius: 0 100px 100px 0;
+    min-height: 45px;
+    border: 0px;
+}
+/* ============================================
+    Section Eight End(Newsletter)
+============================================ */
+
+
+/* ============================================
+    Section Nine Start(Footer)
+============================================ */
+
+.website_footer {
+    background-color: #232f3e;
+}
+
+.website_footer h6 {
+    text-align: left;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1;
+    font-weight: bold;
+    letter-spacing: 1.6px;
+    margin-bottom: 40px;
+}
+
+.website_footer p {
+    text-align: left;
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 40px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.website_footer li a {
+    text-align: left;
+    color: #fff;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.website_footer li a:hover {
+    color: deepskyblue;
+    text-decoration: underline;
+}
+
+.footer_email {
+    font-size: 14px;
+}
+
+.website_footer .footer_copyright {
+    border-top: 1px solid grey;
+}
+
+.website_footer .scrolltop {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    background-color: #16c9f6;
+    margin-top: 15px;
+    float: right;
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+}
+
+.scrolltop .fa {
+    color: #fff;
+}
+
+.website_footer .scrolltop:hover {
+    background-color: #fff;
+}
+
+.website_footer .scrolltop:hover .scrolltop_arrow {
+    color: #16c9f6;
+}
+/* ============================================
+    Section Nine End(Footer)
+============================================ */
+
+@media (min-width: 320px) and (max-width: 999.99px) {
+    .pricing {
+        height: auto;
+    }
+    .pricing .pricing_card_second {
+        transform: translateY(0px);
+        margin: 30px 0;
+    }
+    .happyclients {
+        width: 100%;
+        height: auto;
+        padding: 80px 0;
+    }
+    .newsletter {
+        margin-top: 0px;
+    }
+    .card-footer a {
+        padding: 12px 40px;
+    }
+    .contact_us {
+        padding-top: 60px;
+        margin-top: 0px;
+    }
+    .extra_div {
+        padding: 18px 50px!important;
+    }
+    
+    /* ************************ NavBar *************************** */
+    .sidenav {
+        width: 0;
+        height: 700px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #8b4ade;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+
+    .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #fff;
+      display: block;
+      transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+        color: #fff;
+        background-color: #16c9f6;
+    }
+    
+    .closediv {
+        height: 55px;
+        margin-top: -15px;
+        margin-bottom: 20px;
+        box-shadow: 5px 5px 12px 0px #ddd;
+    }
+
+    .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+    .sidenav .closebtn:hover {
+        color: #16c9f6;
+        background-color: transparent;
+    }
+    
+    #navbarSupportedContent {
+        display: none;
+    }
+    
+    .nav_menu {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    #mySidenav {
+        display: block;
+    }
+    
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
